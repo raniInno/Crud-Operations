@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "TODOS")
+@Table(name = "Todos")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -14,6 +14,7 @@ public class TodosEntity {
     @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column
     private String title;
     @Column

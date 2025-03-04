@@ -18,7 +18,10 @@ public class todosController {
     @Autowired
     TodoService todoService;
     private static final Logger logger1 = LoggerFactory.getLogger(todosController.class);
-
+@GetMapping("")
+    public String getMessage(){
+    return "Hello docker";
+}
 
     //post
     @PostMapping("/create")
